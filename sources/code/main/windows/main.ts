@@ -200,6 +200,7 @@ export default function createMainWindow(flags:MainWindowFlags): BrowserWindow {
         case "notifications":
         case "fullscreen":
         case "background-sync":
+        case "pointerLock":
           return appConfig.value.settings.privacy.permissions[permission]??false;
         default:
           return null;
